@@ -12,20 +12,25 @@ h1, h2, h3, h4, h5, h6 {
   font-family:'Montserrat', sans-serif; 
   color: white;
 }
-
 p{
   font-family: 'Open Sans', sans-serif
 }
 p.acerca-mi{
   font-size: 1.2em;
 }
-
 hr{
   width: 10%;
+}
+a{
+  text-decoration: none;
 }
 .hr-orange{
   border: 2px solid #F4A470;
  /* height: 50px;*/
+}
+.len-ado{
+  margin: auto;
+  padding-top: 10%;
 }
 
 /*MENU*/
@@ -85,4 +90,4 @@ ul.hola>li>i:hover{
   background-color: #2B9F9A;
   border-color: #46b8da;
   border-radius: 30px;
-  
+
