@@ -1,0 +1,18 @@
+.container-fluid{
+	padding-left: 0px;
+}
+.navbar-default{
+	margin:0px;
+	padding: 0px;
+	height:100vh;
+}
+
+/*position: fixed;
+	top: 0px;
+	bottom: 0;
+	left: 0;
+	
+	display: block;
+	
+	overflow-x: hidden;
+	overflow-y: auto;*/

@@ -1,0 +1,88 @@
+.rw-ht{ /*ANCHO DE CADA SECCION*/
+  height: 650px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+ul{
+  margin: 0px;
+  padding: 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family:'Montserrat', sans-serif; 
+  color: white;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif
+}
+p.acerca-mi{
+  font-size: 1.2em;
+}
+
+hr{
+  width: 10%;
+}
+.hr-orange{
+  border: 2px solid #F4A470;
+ /* height: 50px;*/
+}
+
+/*MENU*/
+
+.navbar-shan {
+  background-color:  #00022F;
+  color: white;
+}
+
+#myNavbar> ul> li>a{
+  font-family:'Montserrat', sans-serif; 
+  list-style: none;
+  color: white;
+}
+#myNavbar> ul> li>a:hover{
+border-radius: 30px;
+  background-color:  #2B9F9A;
+  color: #F4A470;
+}
+
+#myNavbar> ul> li:hover{
+  border-radius: 30px;
+  width: 250px;
+  padding-left: 10px;
+  padding-right: 60px;
+}
+
+.contacto{
+  bottom: 0;
+  left: 3;
+  margin-left: 1px;
+}
+div.contacto>h3{
+  padding-left: 30px;
+}
+
+ul.hola>li{
+  display: inline-block;
+  color: white;
+  padding-right: 10px;
+  padding-left:20px; 
+  margin-top: 20px;
+}
+
+ul.hola>li>i:hover{
+  color: #2B9F9A;
+}
+
+/*SECCION SOBRE MI*/
+
+#foto-shan{
+  height: 500px;
+}
+
+.btn-cv {
+  color: #fff;
+  background-color: #2B9F9A;
+  border-color: #46b8da;
+  border-radius: 30px;
+  
