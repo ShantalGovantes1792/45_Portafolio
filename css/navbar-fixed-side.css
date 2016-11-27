@@ -2,8 +2,36 @@
   .navbar-fixed-side{
     margin-left:-15px;
     margin-right:-15px;
-      }
-    } 
+    /*LO SIGUIENTE ESTO LO PUSE PARA QUE FUERA FIXED CUANDO FUERA EN MOVIL*/
+    position: fixed;
+    z-index: 1030;
+    right: 0;
+    left: 0;
+    margin-right: 15%;
+  }
+  .menu-margin{
+    margin-bottom: 5%;
+  }
+  .margin-sm-xs{
+    margin-top: 5%;
+  }
+  .acer-textos{
+    text-align: center;
+  }
+  #curriculum{
+    margin-bottom: 5%;
+  }
+  /*GIF DE LA PARTE DE CONTACTO*/
+  #contact-gif{
+  width: 100%;
+  height: 200px;
+  background-size: 120%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  }
+} 
 @media (min-width: 768px){
 
   .navbar-fixed-side{
@@ -16,12 +44,6 @@
     border-bottom-width:0;
     border-radius:0;
   }
-  #foto-shan{
-    
-  }
-
-
-
 
   /*ESTO ES PARA QUE NO EXISTA ESCROLLING HORIZONTAL EN EL MENU */
  .navbar-fixed-side .container,.navbar-fixed-side .container-fluid{

@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <title>Shantal Govantes</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 "><!-- user-scalable=no -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- user-scalable=no -->
     <link href="css/bootstrap.min.css" rel="stylesheet"/>
-    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/utilities.css">
-    <link href="css/style-ok.css" rel="stylesheet"/>
-    <link href="css/skills.css" rel="stylesheet"/>
-    <link href="css/navbar-fixed-side.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="css/utilities.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style-ok.css"/>
+    <link rel="stylesheet" type="text/css" href="css/skills.css"/>
+    <!-- ARCHIVO PARA SIDE MENU -->
+    <link rel="stylesheet" type="text/css" href="css/navbar-fixed-side.css"/>
+    <!-- ARCHIVO PARA LIGHTBOX GALLERY -->
+    <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="shortcut icon" href=""> <!-- FAVICON-->
   </head>
   <body>
@@ -22,9 +25,10 @@
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
                   <span class="sr-only">Toggle navigation</span>
+                  <i class="fa fa-home fa-2x" aria-hidden="true"></i>
+                  <!-- <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span> -->
                 </button>
                 <a class="navbar-brand hidden-xs" href=""><img src="img/logo2.png" alt="Logo shantal Govantes"></a>
                 <a class=" navbar-brand visible-xs" href=""><img src="img/logo2-xs.png" alt="Logo shantal Govantes"></a>
@@ -32,19 +36,21 @@
               <!-- COLLAPSE -->
               <div class=" navbar-collapse collapse navbar-collapse" id="myNavbar" >
                 <ul class="nav navbar-nav">
-                  <li><a href="#inicio"><i class="fa fa-arrow-right" aria-hidden="true"></i> Inicio</a></li>
-                  <li><a href="#acerca"><i class="fa fa-arrow-right" aria-hidden="true"></i> Acerca de mi</a></li>
-                  <li><a href="#skills"><i class="fa fa-arrow-right" aria-hidden="true"></i> Skills</a></li>
-                  <li><a href="#proyectos"><i class="fa fa-arrow-right" aria-hidden="true"></i> Proyectos</a></li>
+                  <li class="mt-10 menu-margin"><a href="#inicio"><i class="fa fa-arrow-right" aria-hidden="true"></i> Inicio</a></li>
+                  <li class=" menu-margin"><a href="#acerca"><i class="fa fa-arrow-right" aria-hidden="true"></i> Acerca de mi</a></li>
+                  <li class=" menu-margin"><a href="#skills"><i class="fa fa-arrow-right" aria-hidden="true"></i> Skills</a></li>
+                  <li class=" menu-margin"><a href="#proyectos"><i class="fa fa-arrow-right" aria-hidden="true"></i> Proyectos Web</a></li>
+                  <li class=" menu-margin"><a href="#diseno"><i class="fa fa-arrow-right" aria-hidden="true"></i> Diseño</a></li>
+                  <li class=" menu-margin hidden-lg hidden-md"><a href="#Contacto"><i class="fa fa-arrow-right" aria-hidden="true"></i> Contacto</a></li>
                 </ul>
-                <div class="row contacto hidden-xs">
-                <h3>Contacto</h3>
-                <ul class="hola">
-                  <li><a href="https://github.com/ShantalGovantes1792"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a></li>
-                  <li><a class="a-none-decoration" href="https://mx.linkedin.com/in/shantal-govantes"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
-                  <li><a href="mailto:shangovm@gmail.com"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
-                </ul>
-              </div>
+                <div class="row contacto hidden-sm hidden-xs">
+                  <h3 class="mt-15"><a href="#Contacto" class="a-none-decoration text-white">Contacto</a></h3>
+                    <ul class="hola">
+                    <li><a class="blanco" href="https://github.com/ShantalGovantes1792" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true" ></i></a></li>
+                    <li><a class="a-none-decoration blanco" href="https://mx.linkedin.com/in/shantal-govantes" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+                    <li><a class="blanco" href="mailto:shangovm@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </nav>
@@ -63,7 +69,7 @@
             <div class="row  pt-2">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <a name="acerca"></a>
-                <h1 class="text-purple text-center">ACERCA DE MI</h1>
+                <h2 class="text-purple text-center">ACERCA DE MI</h2>
                 <hr class="hr-orange">
               </div>
             </div>
@@ -71,105 +77,145 @@
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <img id="foto-shan" class="img-responsive center-block " src="img/shantal_foto2.jpg" alt="foto perfil shantal">
               </div>
-                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                  <h2 class="text-cyan">FRONT-END WEB</h2>
-                  <h3 class="text-pink">DEVELOPER</h3>
-                  <p class="acerca-mi pt-2">A mediano plazo busco incursionar en proyectos digitales para la integración al mundo digital de personas con discapacidades motrices, auditivas y audiovisuales.</p>
-                  <p class="acerca-mi pt-2">La conservación y la enseñanza de las diferentes lenguas indígenas es un proyectos que quiero emprender a largo plazo con ayuda de la tecnología como la realidad aumentada aplicando esta en libros interactivos, ya que estas lenguas son uno de los recursos que nuestro país nos brinda del cual no le damos la importancia que se merece.</p>
-                  <p class="acerca-mi pt-2">Uno de mis objetivos es impartir clases de programación a niños de primaria y en universidades. Ya que para mi a sido un nuevo mundo el cual es infinito.</p>
-                  <button class="btn btn-cv">Descarga mi CV</button>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 acer-textos">
+                  <h2 class="text-cyan">FRONT-END WEB DEVELOPER</h2>
+                  <h3 class="text-pink">DISEÑADORA GRÁFICA</h3>
+                  <p class="pt-2">A mediano plazo busco incursionar en proyectos digitales para la integración al mundo digital de personas con discapacidades motrices, auditivas y audiovisuales.</p>
+                  <p class="pt-2">La conservación y la enseñanza de las diferentes lenguas indígenas es un proyectos que quiero emprender a largo plazo con ayuda de la tecnología como la realidad aumentada aplicando esta en libros interactivos, ya que estas lenguas son uno de los recursos que nuestro país nos brinda del cual no le damos la importancia que se merece.</p>
+                  <p class="pt-2">Uno de mis objetivos es impartir clases de programación a niños de primaria y en universidades. Ya que para mi a sido un nuevo mundo el cual es infinito.</p>
+                  <button id="curriculum" class="btn btn-cv center-block">Descarga mi CV</button>
                 </div>
             </div>
           </section>
           <!-- SKILLS -->
           <section id="skills">
-            <div class="row bk-gray1">
-              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-13">
+            <div class="row bk-gray1 pb-5">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <a href="skills"></a>
-                <h1 class="text-pink text-center pt-2">SKILLS</h1>
+                <h2 class="text-pink text-center pt-2">SKILLS</h2>
                 <hr class="hr-orange">
-                <h3 class="text-cyan pt-2 pb-5 text-center">LENGUAJES</h3>
               </div>
             </div>
             <div class="row bk-gray1">
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <!-- SKILL HTML -->
                 <div class="skillbar clearfix" data-percent="70%">
                   <div class="skillbar-title" style="background: #58387F;">
                     <span>HTML5</span>
                   </div>
                   <div class="skillbar-bar" style="background:#7E5FA3;">
                   </div>
-                  <div class="skill-bar-percent">intermedio</div>
+                  <div class="skill-bar-percent"><strong>Intermedio</strong></div>
                 </div>
-                  <div class="skillbar clearfix " data-percent="70%">
+                <!-- SKILL CSS -->
+                <div class="skillbar clearfix " data-percent="70%">
                   <div class="skillbar-title" style="background: #58387F;">
                     <span>CSS3</span>
                   </div>
                   <div class="skillbar-bar" style="background:#7E5FA3;">
                   </div>
-                  <div class="skill-bar-percent">intermedio</div>
+                  <div class="skill-bar-percent"><strong>Intermedio</strong></div>
                 </div>
+                <!-- SKILL JAVASCRIPT -->
                 <div class="skillbar clearfix " data-percent="40%">
-                  <div class="skillbar-title" style="background: #58387F;"><span>JS</span></div>
+                  <div class="skillbar-title" style="background: #58387F;"><span>JavaScript</span></div>
                   <div class="skillbar-bar" style="background:#7E5FA3;"></div>
-                  <div class="skill-bar-percent">básico</div>
+                  <div class="skill-bar-percent"><strong>Básico</strong></div>
                 </div>
-                 <div class="skillbar clearfix " data-percent="40%">
-                  <div class="skillbar-title" style="background:#58387F;"><span>jQuery</span></div>
+                <!-- SKILL JQUERY -->
+                <div class="skillbar clearfix " data-percent="40%">
+                  <div class="skillbar-title" style="background:#58387F;">
+                    <span>jQuery</span></div>
                   <div class="skillbar-bar" style="background:#7E5FA3;"></div>
-                  <div class="skill-bar-percent">básico</div>
+                  <div class="skill-bar-percent"><strong>Básico</strong></div>
+                </div>
+                <!--SKILL BOOTSTRAP-->
+                <div class="skillbar clearfix " data-percent="40%">
+                  <div class="skillbar-title" style="background:#58387F;">
+                    <span>Bootstrap</span></div>
+                  <div class="skillbar-bar" style="background:#7E5FA3;"></div>
+                  <div class="skill-bar-percent"><strong>Básico</strong></div>
+                </div>
+                <!--SKILL GITHUB-->
+                <div class="skillbar clearfix " data-percent="40%">
+                  <div class="skillbar-title" style="background:#58387F;"><span>GitHub</span></div>
+                  <div class="skillbar-bar" style="background:#7E5FA3;"></div>
+                  <div class="skill-bar-percent"><strong>Básico</strong></div>
                 </div>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-              <img class="img-responsive center-bloc len-ado" src="img/iconos-lenguajes3.png" alt="lenguajes de marcado de hiperte4xt y css3">
+                <img class="img-responsive center-bloc img-mar-pad" src="img/iconos-lenguajes4.png" alt="lenguajes de marcado de hipertextO y css3">
               </div>
             </div>
-            <div class="row bk-gray1">
-              <div class="col-lg-12 ">
-                <h3 class="text-cyan pt-2 pb-5 text-center">SOFTWARE</h3>
-              </div>
-            </div>
-            <div class="row pb-5 bk-gray1">
+           <!-- ADOBE -->
+            <div class="row pb-5 bk-gray1 pt-5">
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <img class="img-responsive center-block len-ado" src="img/logo-adobe-css.png" alt="AdobeCC">
+                <img class="img-responsive center-block img-mar-pad" src="img/logo-adobe-css.png" alt="AdobeCC">
               </div>
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <div class="skillbar clearfix " data-percent="70%">
                   <div class="skillbar-title" style="background: #E65F82;"><span>Phosotshop</span></div>
                   <div class="skillbar-bar" style="background: #E488A1;"></div>
-                  <div class="skill-bar-percent">Intermedio</div>
+                  <div class="skill-bar-percent"><strong>Intermedio</strong></div>
                 </div>
                 <div class="skillbar clearfix " data-percent="70%">
                   <div class="skillbar-title" style="background: #E65F82;"><span>Illustrator</span></div>
                   <div class="skillbar-bar" style="background: #E488A1;"></div>
-                  <div class="skill-bar-percent">Intermedio</div>
+                  <div class="skill-bar-percent"><strong>Intermedio</strong></div>
                 </div>
                 <div class="skillbar clearfix " data-percent="70%">
                   <div class="skillbar-title" style="background: #E65F82;"><span>IDesgin</span></div>
                   <div class="skillbar-bar" style="background: #E488A1;"></div>
-                  <div class="skill-bar-percent">Intermedio</div>
+                  <div class="skill-bar-percent"><strong>Intermedio</strong></div>
                 </div>
               </div>
             </div>
+            <!-- OTROS -->
+            <div class="row pb-5 pt-5 bk-gray1">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-2">
+                <div class="skillbar clearfix " data-percent="50%">
+                  <div class="skillbar-title" style="background: #2B9F9A;"><span>WordPress</span></div>
+                  <div class="skillbar-bar" style="background: #36C4BD;"></div>
+                  <div class="skill-bar-percent"><strong>Intermedio</strong></div>
+                </div>
+                <div class="skillbar clearfix " data-percent="40%">
+                  <div class="skillbar-title" style="background: #2B9F9A;"><span>Cpanel</span></div>
+                  <div class="skillbar-bar" style="background: #36C4BD;"></div>
+                  <div class="skill-bar-percent"><strong>Básico</strong></div>
+                </div>
+                <div class="skillbar clearfix " data-percent="30%">
+                  <div class="skillbar-title" style="background: #2B9F9A;"><span>Mailchimp</span></div>
+                  <div class="skillbar-bar" style="background: #36C4BD;"></div>
+                  <div class="skill-bar-percent"><strong>Básico</strong></div>
+                </div>
+                <div class="skillbar clearfix " data-percent="30%">
+                  <div class="skillbar-title" style="background: #2B9F9A;"><span>Google Analitycs</span></div>
+                  <div class="skillbar-bar" style="background: #36C4BD;"></div>
+                  <div class="skill-bar-percent"><strong>Básico</strong></div>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                <img class="img-responsive center-block " src="img/iconos-herramientas.png" alt="AdobeCC">
+              </div>
+            </div>
           </section>
-          <!-- PORTAFOLIO -->
+          <!-- PORTAFOLIO DE PROYECTOS WEB-->
           <section id="portafolio">
             <div class="row pt-2">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <a name="proyectos"></a>
-                <h1 class="text-purple text-center">Proyectos</h1>
+                <h2 class="text-purple text-center">PROYECTOS WEB</h2>
                 <hr class="hr-orange">
-                <h2 class="text-center text-orange">WEB</h2>
               </div>
             </div>
             <div class="row pt-5">
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <img class="img-responsive" src="img/web/kane.jpg" alt="sitio-web-kean">
               </div>
-              <div class="col-lg-4 col-sm-12 col-xs-12">
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-sm-xs">
                 <img class="img-responsive" src="img/web/user-testing-360.jpg" alt="sitio-web-kean">
               </div>
-              <div class="col-lg-4 col-sm-12 col-xs-12">
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-sm-xs">
                 <img class="img-responsive" src="img/web/sprint.jpg" alt="sitio-web-kean">
               </div>
             </div>
@@ -177,49 +223,154 @@
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                 <img class="img-responsive" src="img/web/coder.jpg" alt="sitio-web-kean">
               </div>
-              <div class="col-lg-4 col-sm-12 col-xs-12">
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-sm-xs">
                 <img class="img-responsive" src="img/web/primes.jpg" alt="sitio-web-kean">
               </div>
-              <div class="col-lg-4 col-sm-12 col-xs-12">
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-sm-xs">
                 <img class="img-responsive" src="img/web/comunidad-sostenible.jpg" alt="sitio-web-kean">
               </div>
             </div>
-            <!-- DISEÑO -->
-            <div class="row pt-2">
+            <!-- PROYECTOS DE DISEÑO -->
+            <div class="row pt-5">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <a name="diseno"></a>
                 <h2 class="text-center text-orange">DISEÑO</h2>
+                <hr class="hr-orange">
               </div>
             </div>
+            <!-- PRIMER ROW -->
             <div class="row pt-5">
+              <!-- LOGOTIPO KHOCH -->
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <img class="img-responsive" src="img/design/knoch.jpg" alt="sitio-web-kean">
+                <a href="img/design/khoch.jpg" class="animated zoomIn with-caption image-link img-responsive" title="Creacion de logotipo para la marca de ropa interior Kkoch">
+                  <img class="img-responsive" src="img/design/khoch.jpg" alt="logotipo Khoch">
+                  <div class="divFondo text-center center-block">
+                    <h3>Logotipo Khoch</h3>
+                    <h5>Identidad Gráfica</h5>
+                    <p>Creacion de logotipo para la marca de ropa interior Khoch</p>
+                  </div>
+                </a>
               </div>
-              <div class="col-lg-4 col-sm-12 col-xs-12">
-                <img class="img-responsive" src="img/design/nutriaddcion.jpg" alt="sitio-web-kean">
+              <!-- LOGOTIPO NUTRIADICCIÓN -->
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-sm-xs">
+                <a href="img/design/nutriaddcion.jpg" class="animated zoomIn with-caption image-link img-responsive" title="Propuesta de logotipo para la marca de snacks Nutriadicción">
+                  <img class="img-responsive" src="img/design/nutriaddcion.jpg" alt="logotipo nutriadicción">
+                  <div class="divFondo text-center center-block">
+                    <h3>Logotipo Nutriadicción</h3>
+                    <h5>Identidad Gráfica</h5>
+                    <p>Propuesta de logotipo para la marca de snacks Nutriadicción</p>
+                  </div>
+                </a>
               </div>
-              <div class="col-lg-4 col-sm-12 col-xs-12">
-                <img class="img-responsive" src="img/design/mas-aire.jpg" alt="sitio-web-kean">
+              <!-- LOGOTIPO +AIRE -->
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-sm-xs">
+                <a href="img/design/mas-aire.jpg" class="animated zoomIn with-caption image-link img-responsive" title="Logotipo para sitio y aplicación web realizado durante el Hackathon Telcel Infinitum 2016">
+                  <img class="img-responsive" src="img/design/mas-aire.jpg" alt="logotipo más aire">
+                  <div class="divFondo text-center center-block">
+                    <h3>Logotipo +Aire</h3>
+                    <h5>Identidad Gráfica</h5>
+                    <p>Logotipo para sitio y aplicación web realizado durante el Hackathon Telcel Infinitum 2016</p>
+                  </div>
+                </a>
               </div>
             </div>
+            <!-- SEGUNDO ROW -->
             <div class="row pt-5">
+              <!-- VERSIONAMIENTO NUTRIADICION -->
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <img class="img-responsive"src="img/design/galletas.jpg" alt="sitio-web-kean">
+                 <a href="img/design/bolsas-nutri.jpg" class="animated zoomIn with-caption image-link img-responsive" title="Propuesta de empaque para linea de Snacks Nutriadicción">
+                  <img class="img-responsive"src="img/design/bolsas-nutri.jpg" alt="empaques nutriadicción">
+                  <div class="divFondo text-center center-block">
+                    <h3>Nutriadicción</h3>
+                    <h5>Empaque</h5>
+                    <p>Propuesta de empaque para línea de Snacks Nutriadicción</p>
+                  </div>
+                </a>
               </div>
-              <div class="col-lg-4 col-sm-12 col-xs-12">
-                <img class="img-responsive" src="img/design/caja-san-valentin.jpg" alt="sitio-web-kean">
+              <!-- CAJA SAN VALENTIN GALLETAS GABI -->
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-sm-xs">
+                <a href="img/design/caja-san-valentin.jpg" class="animated zoomIn with-caption image-link img-responsive" title="Propuesta de empaque para dia de San Valentín galletas Gabi">
+                  <img class="img-responsive" src="img/design/caja-san-valentin.jpg" alt="diseño caja san valentin galletas gabi">
+                  <div class="divFondo text-center center-block">
+                    <h3>Galletas Gabi</h3>
+                    <h5>Empaque</h5>
+                    <p>Propuesta de empaque para dia de San Valentín galletas Gabi</p>
+                  </div>
+                </a>
               </div>
-              <div class="col-lg-4 col-sm-12 col-xs-12">
-                <img class="img-responsive" src="img/design/kw.jpg" alt="sitio-web-kean">
+              <!-- EMPAQUE GALLETAS GABI -->
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-sm-xs">
+                 <a href="img/design/galletas.jpg" class="animated zoomIn with-caption image-link img-responsive" title="Boceto para Propuesta de rediseño de empaque galletas Gabi">
+                  <img class="img-responsive"src="img/design/galletas.jpg" alt="empaque galletas gabi">
+                  <div class="divFondo text-center center-block">
+                    <h3>Galletas Gabi</h3>
+                    <h5>Empaque</h5>
+                    <p>Boceto para Propuesta de rediseño de empaque galletas Gabi</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- TERCER ROW -->
+            <div class="row pt-5 pb-5">
+              <!-- INSTITUTO ALESA -->
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                <a href="img/design/alesa-1.jpg" class="animated zoomIn with-caption image-link img-responsive" title="Póster y flyer publicitario para cursos de ingreso a UNAM, IPN, UAM">
+                  <img class="img-responsive" src="img/design/alesa-1.jpg" alt="Póster y flyer publicitario para cursos de ingreso a UNAM, IPN, UAM">
+                  <div class="divFondo text-center center-block">
+                    <h3>Instituto Alesa</h3>
+                    <h5>Impresos</h5>
+                    <p>Póster y flyer publicitario para cursos de ingreso a UNAM, IPN, UAM</p>
+                  </div>
+                </a>
+              </div>
+              <!-- DIGITAL MOVIL -->
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-sm-xs">
+                <a href="img/design/digital-movil.jpg" class="animated zoomIn with-caption image-link img-responsive" title="Diseño de identidad gráfica y papelería personal Digital Movil">
+                  <img class="img-responsive" src="img/design/digital-movil.jpg" alt="logotipo, hoja membretada y tarjeta de presentación para la empresa digital movil">
+                  <div class="divFondo text-center center-block">
+                    <h3>Digital Movil</h3>
+                    <h5>Impresos</h5>
+                    <p>Diseño de identidad gráfica y papelería personal Digital Movil</p>
+                  </div>
+                </a>
+              </div>
+              <!-- FANDELI -->
+              <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-sm-xs">
+                <a href="img/design/fandeli-2.jpg" class="animated zoomIn with-caption image-link img-responsive" title="Adaptación de publicidad para línea de lijas fandeli">
+                  <img class="img-responsive"src="img/design/fandeli-2.jpg" alt="publicidad fandeli">
+                  <div class="divFondo text-center center-block">
+                    <h3>Fandeli</h3>
+                    <h5>Impresos</h5>
+                    <p>Adaptación de publicidad para línea de lijas fandeli</p>
+                  </div>
+                </a>
               </div>
             </div>
           </section>
-
+          <section id="contacto">
+            <div class="row pt-2 pb-5">
+              <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <a name="Contacto"></a>
+                <div id="contact-gif"></div>
+                <h2 class="text-cyan text-center">CONTACTO</h2>
+                <hr class="hr-orange">
+                <p class="text-cyan text-center">Eso es todo, pero puede no ser el fin <br> si te gusto mi trabajo contáctame y trabajemos juntos. <br>
+                ¡HASTA PRONTO!</p>  
+              </div>
+            </div>
         </div>
       </div>
     </div>
+    <!-- ESTE SCRIPT ES PARA SIDE MENU -->
     <script type="text/javascript" src="js/application.js"></script>
+    <!-- ARCHIVO DE BOOTSTRAP JS -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/skills.js"></script>
+    <!-- ARCHIVO JQUERY -->
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <!-- ARCHIVO PARA LIGHTBOX GALLERY -->
+    <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
+    <!-- MI PROPIO JS -->
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
 

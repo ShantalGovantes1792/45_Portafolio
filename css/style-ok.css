@@ -1,54 +1,88 @@
-.rw-ht{ /*ANCHO DE CADA SECCION*/
+/*ANCHO DE CADA SECCION*/
+.rw-ht{
   height: 650px;
   padding-top: 5%;
   padding-bottom: 5%;
 }
 
+/* GENERALES */
+
 ul{
   margin: 0px;
   padding: 0px;
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1, h2, h3, h4, h5, h6, .btn-cv {
   font-family:'Montserrat', sans-serif; 
   color: white;
 }
+
 p{
-  font-family: 'Open Sans', sans-serif
-}
-p.acerca-mi{
+  font-family: 'Open Sans', sans-serif;
   font-size: 1.2em;
 }
+
 hr{
   width: 10%;
 }
+
 a{
   text-decoration: none;
 }
+
 .hr-orange{
   border: 2px solid #F4A470;
  /* height: 50px;*/
 }
-.len-ado{
+
+.img-mar-pad{
   margin: auto;
   padding-top: 10%;
 }
 
 /*MENU*/
+.navbar{
+  margin-bottom: 0px;
+}
 
 .navbar-shan {
   background-color:  #00022F;
   color: white;
 }
 
+.menu-margin{
+  margin-bottom: 15%;
+}
+.navbar-collapse{
+  padding-left: 15%;
+}
+
+.navbar-brand{
+  padding-left: 13%;
+}
+
+/*ICONO DE HAMBURGUESA*/
+
+/*.navbar-toggle {
+    border-color:rgba(175, 44, 147, 0.74);
+
+.navbar-toggle .icon-bar {
+    background-color: rgba(175, 44, 147, 0.74); 
+}
+
+}*/
+
+/*FUENTE DE LOS ENLACES DEL MENU*/
 #myNavbar> ul> li>a{
   font-family:'Montserrat', sans-serif; 
   list-style: none;
   color: white;
 }
+
 #myNavbar> ul> li>a:hover{
-border-radius: 30px;
+  border-radius: 30px;
   background-color:  #2B9F9A;
-  color: #F4A470;
+  color: #FFF;
 }
 
 #myNavbar> ul> li:hover{
@@ -61,23 +95,28 @@ border-radius: 30px;
 .contacto{
   bottom: 0;
   left: 3;
-  margin-left: 1px;
 }
+
 div.contacto>h3{
   padding-left: 30px;
 }
 
 ul.hola>li{
   display: inline-block;
-  color: white;
   padding-right: 10px;
   padding-left:20px; 
   margin-top: 20px;
 }
 
-ul.hola>li>i:hover{
-  color: #2B9F9A;
+ul.hola>li>a:hover{
+  color: #F4A470;
 }
+  /*COLOR DE LOS ENCLACES DE LA PARTE DE CONTACTO EN EL MENU*/
+  .blanco{
+    color: white;
+    text-decoration: none;
+  }
+
 
 /*SECCION SOBRE MI*/
 
@@ -90,4 +129,40 @@ ul.hola>li>i:hover{
   background-color: #2B9F9A;
   border-color: #46b8da;
   border-radius: 30px;
+  margin-top: 5%; 
+ }
 
+/*SECCION DE PROYECTOS WEB*/
+
+.divFondo{
+  width: 93%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  padding: 18% 10% 10% 10%;
+  transition-duration: 1s;
+  
+}
+.divFondo h3{
+  font-size: 2em;
+}
+.divFondo p{
+  font-size: 1em;
+  color: #fff;
+}
+.divFondo:hover{
+  opacity: 1;
+  transition-duration: 1s;
+  background-color: rgba(31, 15, 50, 0.83); 
+}
+
+/*CONTACTO*/
+#contact-gif{
+  background-image: url("../img/gifs/linn.gif");
+  width: 100%;
+  height: 400px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: -10%;
+}
