@@ -1,11 +1,8 @@
 $(document).ready(function () {
+	 new WOW().init();
+	// SKILLBARS
 
-	$('.skillbar').each(function(){
-		$(this).find('.skillbar-bar').animate({
-			width:$(this).attr('data-percent')
-		},2000);
-	});
-
+	// LIGHTBOX GALLERY
 	$('.with-caption').magnificPopup({
 			type: 'image',
 			closeBtnInside: false,
@@ -18,7 +15,6 @@ $(document).ready(function () {
 	    	}
 		});
 
-
 		$('.iframeblocker').click(function(e) {
 			console.log('Prevent everthing in iFrame');
 			e.preventDefault();
@@ -26,4 +22,11 @@ $(document).ready(function () {
 			var target = $(e.target);
 			($(target.parent()).find('a')).click()
 		});
+
 });
+
+$('.skillbar').each(function(){
+		$(this).find('.skillbar-bar').animate({
+			width:$(this).attr('data-percent')
+		},2000);
+	});

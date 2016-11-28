@@ -9,17 +9,42 @@
     left: 0;
     margin-right: 15%;
   }
+  /*MENU*/
   .menu-margin{
     margin-bottom: 5%;
   }
   .margin-sm-xs{
     margin-top: 5%;
   }
+   /*SECCION INICIO*/
+  h1{
+    margin-top: 20%;
+    font-size: 1.6em;
+  }
+  .pattern{
+    background-size: 100%;
+    background-position: center;
+    height: 450px;
+  }
+  /*ACERCA DE MI*/
   .acer-textos{
     text-align: center;
   }
   #curriculum{
     margin-bottom: 5%;
+  }
+  #foto-shan{
+  width: 80%;
+  height: 80%;
+  }
+
+  #texto-acer{
+    text-align: center;
+  }
+
+  /*SECCION DE SKILLS*/
+  #adobe{
+    margin-bottom: 10%;
   }
   /*GIF DE LA PARTE DE CONTACTO*/
   #contact-gif{
