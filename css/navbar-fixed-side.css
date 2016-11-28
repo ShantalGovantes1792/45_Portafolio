@@ -7,7 +7,8 @@
     z-index: 1030;
     right: 0;
     left: 0;
-    margin-right: 15%;
+    margin-right: 8%;
+    margin-left: 8%;
   }
   /*MENU*/
   .menu-margin{
@@ -45,6 +46,10 @@
   /*SECCION DE SKILLS*/
   #adobe{
     margin-bottom: 10%;
+  }
+  #lenguajes{
+    margin-top: 10%;
+    margin-bottom: 15%;
   }
   /*GIF DE LA PARTE DE CONTACTO*/
   #contact-gif{
