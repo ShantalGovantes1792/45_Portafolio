@@ -26,7 +26,7 @@
           <nav class="navbar navbar-shan navbar-fixed-side " role="navigation">
             <div class="container">
               <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" >
+                <button type="button" class="navbar-toggle" data-toggle="collapse"  id="home-nav">
                   <span class="sr-only">Toggle navigation</span>
                   <i class="fa fa-home fa-2x" aria-hidden="true"></i>
                   <!-- <span class="icon-bar"></span>
@@ -37,21 +37,57 @@
                 <a class=" navbar-brand visible-xs" href=""><img src="img/logo2-xs.png" alt="Logo shantal Govantes"></a>
               </div>
               <!-- COLLAPSE -->
-              <div class=" navbar-collapse collapse navbar-collapse" id="myNavbar" >
+              <div class=" navbar-collapse collapse" id="myNavbar" >
                 <ul class="nav navbar-nav">
-                  <li class="mt-10 menu-margin"><a href="#inicio"><i class="fa fa-arrow-right" aria-hidden="true"></i> Inicio</a></li>
-                  <li class=" menu-margin"><a href="#acerca"><i class="fa fa-arrow-right" aria-hidden="true"></i> Acerca de mi</a></li>
-                  <li class=" menu-margin"><a href="#skills"><i class="fa fa-arrow-right" aria-hidden="true"></i> Skills</a></li>
-                  <li class=" menu-margin"><a href="#proyectos"><i class="fa fa-arrow-right" aria-hidden="true"></i> Proyectos Web</a></li>
-                  <li class=" menu-margin"><a href="#diseno"><i class="fa fa-arrow-right" aria-hidden="true"></i> Diseño</a></li>
-                  <li class=" menu-margin hidden-lg hidden-md"><a href="#Contacto"><i class="fa fa-arrow-right" aria-hidden="true"></i> Contacto</a></li>
+                  <li class="mt-10 menu-margin">
+                    <a href="#inicio" class="ocultar">
+                      <i class="fa fa-arrow-right" aria-hidden="true"></i> Inicio
+                    </a>
+                  </li>
+                  <li class=" menu-margin">
+                    <a href="#acerca" class="ocultar">
+                      <i class="fa fa-arrow-right" aria-hidden="true"></i> Acerca de mi
+                    </a>
+                  </li>
+                  <li class=" menu-margin">
+                    <a href="#skills" class="ocultar">
+                      <i class="fa fa-arrow-right" aria-hidden="true"></i> Skills
+                    </a>
+                  </li>
+                  <li class=" menu-margin">
+                    <a href="#proyectos" class="ocultar">
+                      <i class="fa fa-arrow-right" aria-hidden="true"></i> Proyectos Web
+                    </a>
+                  </li>
+                  <li class=" menu-margin">
+                    <a href="#diseno" class="ocultar">
+                      <i class="fa fa-arrow-right" aria-hidden="true"></i> Diseño
+                    </a>
+                  </li>
+                  <li class=" menu-margin hidden-lg hidden-md">
+                    <a href="#Contacto" class="ocultar">
+                      <i class="fa fa-arrow-right" aria-hidden="true"></i> Contacto
+                    </a>
+                  </li>
                 </ul>
                 <div class="row contacto hidden-sm hidden-xs">
-                  <h3 class="mt-15"><a href="#Contacto" class="a-none-decoration text-white">Contacto</a></h3>
+                  <h3 class="mt-15"><a href="#Contacto" class="a-none-decoration text-white bt-contacto">Contacto</a></h3>
                     <ul class="hola">
-                    <li><a class="blanco" href="https://github.com/ShantalGovantes1792" target="_blank"><i class="fa fa-github fa-2x" aria-hidden="true" ></i></a></li>
-                    <li><a class="a-none-decoration blanco" href="https://mx.linkedin.com/in/shantal-govantes" target="_blank"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
-                    <li><a class="blanco" href="mailto:shangovm@gmail.com" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+                      <li>
+                        <a class="blanco" href="https://github.com/ShantalGovantes1792" target="_blank">
+                          <i class="fa fa-github fa-2x" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="a-none-decoration blanco" href="https://mx.linkedin.com/in/shantal-govantes" target="_blank">
+                          <i class="fa fa-linkedin fa-2x" aria-hidden="true"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a class="blanco" href="mailto:shangovm@gmail.com" target="_blank">
+                          <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+                        </a>
+                      </li>
                   </ul>
                 </div>
               </div>
@@ -64,30 +100,29 @@
             <div class="row rw-ht pattern">
               <a name="inicio"></a>
               <h1 class="text-center pd-10-10 text-cyan wow bounceInUp">La vida no es fácil para ninguno de nosotros. Pero... ¡Qué importa! Hay que perseverar y, sobre todo, tener confianza en uno mismo.</h1>
-              <h3 class="text-center text-purple wow fadeInUp">Marie Curie</h3>
+              <h1 class="text-center text-purple wow fadeInUp">Marie Curie</h1>
             </div>
           </section>
           <!-- ACERCA DE MI -->
           <section id="acerca">
-            <div class="row  pt-2">
+            <div class="row pt-2">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <a name="acerca"></a>
                 <h2 class="text-purple text-center wow slideInUp">ACERCA DE MI</h2>
                 <hr class="hr-orange">
               </div>
             </div>
-            <div class="row rw-ht pattern2">
+            <div class="row pattern2 pt-2 pb-10">
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <img id="foto-shan" class="img-responsive center-block wow bounceInLeft" src="img/shantal_foto2.jpg" alt="foto perfil shantal">
               </div>
-                <div id="texto-acer"class="col-lg-6 col-md-6 col-sm-12 col-xs-12 acer-textos">
+                <div id="texto-acer"class="col-lg-6 col-md-6 col-sm-12 col-xs-12 acer-textos pr-5">
                   <h2 class="text-cyan  wow bounceInRight">FRONT-END WEB DEVELOPER</h2>
-                  <h3 class="text-pink  wow bounceInRight">DISEÑADORA Y COMUNICÓLOGA VISUAL</h3>
-                  <p class="pt-2"> Te doy la bienvenida a mi sitio web, me llamo <strong> Shantal Govantes </strong> y aquí podrás encontrar proyectos web en los que he trabajado durante 5 meses aprendiendo desarrollo en <strong>Laboratoria</strong>.
+                  <h4 class="text-pink  wow bounceInRight">DISEÑADORA Y COMUNICÓLOGA VISUAL</h4>
+                  <p class="pt-2"> Te doy la bienvenida a mi sitio web, me llamo <strong> Shantal Govantes </strong> y aquí podrás encontrar proyectos web en los que he trabajado durante mi estancia en <strong>Laboratoria</strong>.
                   </p> 
-                  <p class="pt-2">Aparte de incursionar en aprender a desarrollar sitios web , también soy <em> Diseñadora y Comunicóloga Visual</em>, especializada en diseño editorial. Mi formación la obtuve en la <em>Facultad de Artes y diseño de la UNAM </em>. Uno de mis intereses es incursionar en proyectos digitales para la integración al mundo digital de <em>personas con discapacidades motrices, auditivas y audiovisuales.</em></p>
-                  <p class="pt-2">Uno de mis objetivos es emprender a largo plazo proyectos vinculados a la conservación y enseñanaza de las diferentes <em> lenguas indígenas </em>con ayuda de la tecnología como la realidad aumentada, aplicando esta en libros interactivos, ya que son uno de los recursos que nuestro país nos brinda del cual no le damos la importancia que se merece.</p>
-                  <button id="curriculum" class="btn btn-cv center-block wow bounceInRight"><a class="a-none-decoration text-white" href="docs/Shantal-Govantes.pdf" target="_blanck">Descarga mi CV</a></button>
+                  <p class="pt-2">Aparte de ser desarrolladora web, también soy <em> Diseñadora y Comunicóloga Visual</em>. Uno de mis intereses es incursionar en proyectos digitales para la integración al mundo digital de <em>personas con discapacidades motrices, auditivas y audiovisuales.</em></p>
+                  <button id="curriculum" class="btn btn-cv center-block wow bounceInRight"><a class="a-none-decoration text-white btn-cv-hover" href="docs/Shantal-Govantes.pdf" target="_blanck">Descarga mi CV</a></button>
                 </div>
             </div>
           </section>
@@ -134,11 +169,11 @@
                   <div class="skill-bar-percent"><strong>Básico</strong></div>
                 </div>
                 <!--SKILL BOOTSTRAP-->
-                <div class="skillbar clearfix " data-percent="40%">
+                <div class="skillbar clearfix " data-percent="70%">
                   <div class="skillbar-title" style="background:#58387F;">
                     <span>Bootstrap</span></div>
                   <div class="skillbar-bar" style="background:#7E5FA3;"></div>
-                  <div class="skill-bar-percent"><strong>Básico</strong></div>
+                  <div class="skill-bar-percent"><strong>Intermedio</strong></div>
                 </div>
                 <!--SKILL GITHUB-->
                 <div class="skillbar clearfix " data-percent="40%">
@@ -147,7 +182,7 @@
                   <div class="skill-bar-percent"><strong>Básico</strong></div>
                 </div>
               </div>
-              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 pt-10">
                 <img id="lenguajes" class="img-responsive center-block wow zoomIn" src="img/iconos-lenguajes4.png" alt="lenguajes de marcado de hipertextO y css3">
               </div>
             </div>
@@ -211,14 +246,14 @@
             <div class="row pt-2">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <a name="proyectos"></a>
-                <h2 class="text-purple text-center wow slideInUp">PROYECTOS WEB</h2>
+                <h2 class="text-purple text-center wow slideInUp pt-5">PROYECTOS WEB</h2>
                 <hr class="hr-orange">
               </div>
             </div>
             <div class="row pt-5">
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <a href="http://www.facebook.com" target="_blanck">
-                  <img class="img-responsive wow zoomIn" src="img/web/kane.jpg" alt="sitio-web-kean">
+                <a href="https://shantalgovantes1792.github.io/34_Kane-Theme/" target="_blanck">
+                  <img class="img-responsive img-thumbnail wow zoomIn" src="img/web/kane.jpg" alt="sitio-web-kean">
                   <div class="divFondo text-center center-block">
                     <h3>Color Pallet</h3>
                     <p>Proyecto con uso de bootstrap y animated.css</p>
@@ -226,8 +261,8 @@
                 </a>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-sm-xs">
-                <a href="http://www.facebook.com" target="_blanck">
-                  <img class="img-responsive wow zoomIn" src="img/web/user-testing-360.jpg" alt="sitio-web-testing-360">
+                <a href="https://shantalgovantes1792.github.io/30_Bussines/" target="_blanck">
+                  <img class="img-responsive img-thumbnail wow zoomIn" src="img/web/user-testing-360.jpg" alt="sitio-web-testing-360">
                   <div class="divFondo text-center center-block">
                     <h3>User Testing 360</h3>
                     <p>Proyecto con bootstrap y animated.css implementando las pantallas modals</p>
@@ -235,8 +270,8 @@
                 </a>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-sm-xs">
-                <a href="http://www.facebook.com" target="_blanck">
-                  <img class="img-responsive wow zoomIn" src="img/web/sprint.jpg" alt="sitio-web-sprint">
+                <a href=" https://shantalgovantes1792.github.io/26_Sprint/" target="_blanck">
+                  <img class="img-responsive img-thumbnail wow zoomIn" src="img/web/sprint.jpg" alt="sitio-web-sprint">
                   <div class="divFondo text-center center-block">
                     <h3>Spring Came</h3>
                     <p>Proyecto con bootstrap</p>
@@ -246,8 +281,8 @@
             </div>
             <div class="row pt-5">
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
-                <a href="http://www.facebook.com" target="_blanck">
-                  <img class="img-responsive wow zoomIn" src="img/web/coder.jpg" alt="portafolio Coder">
+                <a href="https://shantalgovantes1792.github.io/28_Coder/" target="_blanck">
+                  <img class="img-responsive img-thumbnail wow zoomIn" src="img/web/coder.jpg" alt="portafolio Coder">
                   <div class="divFondo text-center center-block">
                     <h3>Portafolio Coder</h3>
                     <p>Proyecto con bootstrap y animate.css</p>
@@ -255,8 +290,8 @@
                 </a>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-sm-xs">
-                <a href="http://www.facebook.com" target="_blanck">
-                  <img class="img-responsive wow zoomIn" src="img/web/primes.jpg" alt="sitio primes">
+                <a href="https://shantalgovantes1792.github.io/21_Examen_TechTheme/" target="_blanck">
+                  <img class="img-responsive img-thumbnail wow zoomIn" src="img/web/primes.jpg" alt="sitio primes">
                   <div class="divFondo text-center center-block">
                     <h3>Bussines Prime</h3>
                     <p>Proyecto en conjunto usando el framework de bootstrap y animate.css</p>
@@ -264,8 +299,8 @@
                 </a>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 margin-sm-xs">
-                <a href="http://www.facebook.com" target="_blanck">
-                  <img class="img-responsive wow zoomIn" src="img/web/comunidad-sostenible.jpg" alt="sitio comunidad sostenible">
+                <a href="https://shantalgovantes1792.github.io/18_comunidad-sostenible/" target="_blanck">
+                  <img class="img-responsive img-thumbnail wow zoomIn" src="img/web/comunidad-sostenible.jpg" alt="sitio comunidad sostenible">
                   <div class="divFondo text-center center-block">
                     <h3>Comunidad Sostenible</h3>
                     <p>Proyecto usando el framework de bootstrap y animate.css</p>
@@ -274,10 +309,10 @@
               </div>
             </div>
             <!-- PROYECTOS DE DISEÑO -->
-            <div class="row pt-5">
+            <div class="row pt-2">
               <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <a name="diseno"></a>
-                <h2 class="text-center text-orange wow slideInUp">DISEÑO</h2>
+                <h2 class="text-center text-orange wow slideInUp pt-5">DISEÑO</h2>
                 <hr class="hr-orange">
               </div>
             </div>
@@ -396,13 +431,35 @@
                 <a name="Contacto"></a>
                 <div id="contact-gif" class="wow zoomIn"></div>
                 <h2 class="text-cyan text-center wow slideInUp">CONTACTO</h2>
-                <hr class="hr-orange">
-                <p class="text-cyan text-center">Eso es todo, pero puede no ser el fin <br> si te gusto mi trabajo contáctame y trabajemos juntos. <br>
-                <strong>¡HASTA PRONTO!</strong></p> 
-                <ul class="text-center cont-icon">
-                  <li><a href="https://github.com/ShantalGovantes1792" target="_blank"><i class="fa fa-github fa-3x text-purple" aria-hidden="true" ></i></a></li>
-                  <li><a class="a-none-decoration" href="https://mx.linkedin.com/in/shantal-govantes" target="_blank"><i class="fa fa-linkedin fa-3x text-purple" aria-hidden="true"></i></a></li>
-                  <li><a href="mailto:shangovm@gmail.com" target="_blank"><i class="fa fa-envelope fa-3x text-purple" aria-hidden="true"></i></a></li>
+                <hr class="hr-orange wow slideInUp">
+                <p class="text-cyan text-center wow slideInUp">Eso es todo, pero puede no ser el fin <br> si te gusto mi trabajo contáctame y trabajemos juntos. <br>
+                <strong class="wow slideInUp">¡HASTA PRONTO!</strong></p> 
+                <ul class="text-center cont-icon pt-2 wow slideInUp">
+                  <li>
+                    <a href="https://github.com/ShantalGovantes1792" target="_blank">
+                      <i class="fa fa-github fa-2x text-purple" aria-hidden="true" >
+                      </i>
+                    </a>
+                    <p class="text-purple redes">/ShantalGovantes1792</p>
+                  </li>
+                  <li>
+                    <a class="a-none-decoration" href="https://mx.linkedin.com/in/shantal-govantes" target="_blank">
+                      <i class="fa fa-linkedin fa-2x text-purple" aria-hidden="true"></i>
+                    </a>
+                    <p class="text-purple redes">/shantal-govantes</p>
+                  </li>
+                  <li>
+                    <a href="mailto:shangovm@gmail.com" target="_blank">
+                      <i class="fa fa-envelope fa-2x text-purple" aria-hidden="true"></i>
+                    </a>
+                    <p class="text-purple redes">shangovm@gmail.com</p>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-mobile fa-2x text-purple" aria-hidden="true"></i>
+                    </a>
+                    <p class="text-purple redes">(+521) 55 9107 4874</p>
+                  </li>
                  </ul> 
               </div>
             </div>

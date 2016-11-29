@@ -23,10 +23,49 @@ $(document).ready(function () {
 			($(target.parent()).find('a')).click()
 		});
 
+	// SKILLS BARS
+
+	
+
+	var posicion = $("#skills").position().top;
+
+	$(window).scroll(function(){
+
+		if($(window).scrollTop() > posicion ){
+
+			$('.skillbar').each(function(){
+						$(this).find('.skillbar-bar').animate({
+							width:$(this).attr('data-percent')
+						},2000);
+					});
+
+			}
+
+	});
+
+	// MENU DESAPARECER Y APARECER
+
+	$(".menu-margin").on("click", function(){
+	 	
+		// SI ESTA EN PEQUEÑO OCULTALO SINO NO HAGAS NADA
+
+	 	if ( $(window).width() <= 768 ) {
+	 		console.log("Esta en chiquito");
+	 		$("#myNavbar").hide(400);
+	 	}
+
+		
+
+	});
+
+
+	$("#home-nav").on("click", function(){
+	 	$("#myNavbar").toggle(400)
+	});
+
+
 });
 
-$('.skillbar').each(function(){
-		$(this).find('.skillbar-bar').animate({
-			width:$(this).attr('data-percent')
-		},2000);
-	});
+/*
+class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+*/
