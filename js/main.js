@@ -25,23 +25,29 @@ $(document).ready(function () {
 
 	// SKILLS BARS
 
-	
-
 	var posicion = $("#skills").position().top;
+	var done = false;
 
-	$(window).scroll(function(){
+		$(window).scroll(function(){
 
-		if($(window).scrollTop() > posicion ){
+		    if (done) {
+		        return;
+		    }
 
-			$('.skillbar').each(function(){
-						$(this).find('.skillbar-bar').animate({
-							width:$(this).attr('data-percent')
-						},1400);
-					});
+		    var scrollTop = $(window).scrollTop();
 
-			}
+		    if( (scrollTop > posicion ) ){
 
-	});
+		        $('.skillbar').each(function(){
+			    $(this).find('.skillbar-bar').animate({
+				width:$(this).attr('data-percent')
+			    }, 2000);
+			});
+					
+			done = true;
+		    }
+
+		});
 
 	// MENU DESAPARECER Y APARECER
 
