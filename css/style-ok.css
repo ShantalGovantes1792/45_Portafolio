@@ -1,12 +1,4 @@
 
-
-/*ANCHO DE CADA SECCION*/
-.rw-ht{
-  height: 650px;
-  padding-top: 5%;
-  padding-bottom: 5%;
-}
-
 /* GENERALES */
 
 ul{
@@ -128,6 +120,13 @@ ul.hola>li>a:hover{
   }
 
 /*INICIO*/
+
+.rw-ht{
+  height: 650px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
 .pattern{
   background-image: url("../img/fondo.jpg");
   background-size: 100%;
@@ -162,6 +161,7 @@ ul.hola>li>a:hover{
 #texto-acer{
   text-align : justify;
 }
+
 /*SECCION DE PROYECTOS WEB*/
 
 .divFondo{

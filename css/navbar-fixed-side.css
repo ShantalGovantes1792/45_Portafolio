@@ -10,6 +10,9 @@
     margin-right: 8%;
     margin-left: 8%;
   }
+  .rw-ht{
+    height: 450px;
+  }
   /*MENU*/
   .menu-margin{
     margin-bottom: 5%;
@@ -19,13 +22,18 @@
   }
    /*SECCION INICIO*/
   h1{
-    margin-top: 20%;
+    margin-top: 30%;
     font-size: 1.6em;
   }
+  
+  #curie{
+     font-size: 1.3em;
+  }
+
   .pattern{
     background-size: 100%;
     background-position: center;
-    height: 450px;
+    height: 400px;
   }
   /*ACERCA DE MI*/
   .acer-textos{
