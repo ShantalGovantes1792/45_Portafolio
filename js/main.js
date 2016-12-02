@@ -69,6 +69,7 @@ $(document).ready(function () {
 	 	$("#myNavbar").toggle(400)
 	});
 
+	
 
 });
 

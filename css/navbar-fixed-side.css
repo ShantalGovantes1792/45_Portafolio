@@ -59,6 +59,18 @@
     margin-top: 10%;
     margin-bottom: 15%;
   }
+
+  /*TEXTOS DE PORTA*/
+  .divFondo h3{
+    font-size: 1.3em;
+    margin-top: -5%;
+  }
+
+  .divFondo p{
+    font-size: 0.9em;
+    
+}
+
   /*GIF DE LA PARTE DE CONTACTO*/
   #contact-gif{
   width: 100%;
